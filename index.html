@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark py-4" data-bs-theme="dark">
+        <div class="container w-75">
+          <a class="navbar-brand d-flex justify-content-center align-items-center" href="index.html"><img class="w-25 me-2" src="images/logo@2x.png" alt="logo"><div><h1 class="fs-5">Weather</h1><p class="text-muted fs-6">tagline goes here</p></div></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Live Cameras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Photos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacts</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <main class="position-relative">
+        <section class="section1 align-content-center justify-content-center">
+          <div class="subscription-container w-75 m-auto">
+            <input type="email" placeholder="Find your location..." class="email-input" id="search">
+            <button class="subscribe-button px-5" id="find">Find</button>
+          </div>
+        </section>
+        <div class="weather-main row g-0 container w-75 position-absolute">
+          <div class="col-md-4">
+            <div class="weather-head px-3 py-2 d-flex align-items-center justify-content-between"><span id="day1"></span><span id="date"></span></div>
+            <div class="weather-info px-3 d-flex flex-column justify-content-around">
+              <h4 id="city">cairo</h4>
+              <h2 class="text-white" id="deg1">deg</h2>
+              <img id="status1" src="" alt="status" class="w-25">
+              <h6 id="skyStatus1">cloudy</h6>
+              <div class="weather-icons d-flex gap-3">
+                <p><i class="fa-solid fa-umbrella"></i>20%</p>
+                <p><i class="fa-solid fa-wind"></i>18km/h</p>
+                <p><i class="fa-solid fa-compass"></i>East</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="weather-head head2 px-3 py-2 d-flex align-items-center justify-content-center"><span id="day2"></span></div>
+            <div class="weather-info info2 px-3 d-flex flex-column justify-content-center align-items-center">
+              <img id="status2" src="" alt="status">
+              <h2 class="text-white my-5" id="deg2">deg</h2>
+              <h6 id="sky-status2">cloudy</h6>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="weather-head head3 px-3 py-2 d-flex align-items-center justify-content-center"><span id="day3"></span></div>
+            <div class="weather-info info3 px-3 d-flex flex-column justify-content-center align-items-center">
+              <img id="status3" src="" alt="status">
+              <h2 class="text-white my-5" id="deg3">deg</h2>
+              <h6 id="sky-status3">cloudy</h6>
+            </div>
+          </div>
+        </div>  
+        <section class="section2">
+
+        </section>
+      </main>
+      <footer>
+        <div class="footer-content">
+          <div class="details d-flex justify-content-between align-items-center mb-4">
+            <div class="subscription-container w-75 me-4">
+              <input type="email" placeholder="Enter your email to subscribe..." class="email-input">
+              <button class="subscribe-button">Subscribe</button>
+            </div>
+            <div class="social-icons">
+              <a href="#" class="icon facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="#" class="icon twitter">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="#" class="icon google">
+                <i class="fa-brands fa-google-plus-g"></i>
+              </a>
+              <a href="#" class="icon pinterest">
+                <i class="fa-brands fa-pinterest"></i>
+              </a>
+            </div>
+          </div>
+          <p class="text-white">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+      </footer>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

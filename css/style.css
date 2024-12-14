@@ -1,0 +1,148 @@
+
+:root{
+    --primary-color:#009AD8;
+    --bg-color:#1E202B;
+    --bg-secondary:#323544;
+    --text-color:#BFC1C8;
+}
+/* navbar */
+.navbar ul li{
+    margin: 0 10px;
+}
+.navbar ul li a{
+    padding: 5px 20px !important;
+    color: #fff;
+    transition: all 0.1s;
+}
+.navbar ul li a:hover{
+    color:var(--primary-color) !important;
+    border: 2px solid var(--primary-color);
+    border-radius: 20px;
+}
+.navbar ul li a.active{
+    color:var(--primary-color) !important;
+    border: 2px solid var(--primary-color);
+    border-radius: 20px;
+}
+
+/*main*/
+.section1{
+    height: 50vh;
+    background-image: url("../images/banner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.weather-main{
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 8%;
+}
+.weather-head{
+  background-color: #2D303D;
+  color: var(--text-color);
+}
+.weather-info{
+  height: 50vh;
+  background-color: #323544;
+}
+.info2{
+  background-color: #262936;
+}
+.head2{
+  background-color: #222530;
+}
+.info3{
+  background-color: #323544;
+}
+.head3{
+  background-color: #2D303D;
+}
+.weather-info h6{
+  color:#009AD8;
+}
+.weather-icons{
+  color: var(--text-color);
+}
+#deg1{
+  font-size: 4rem;
+}
+h2{
+  color: #fff;
+}
+h4{
+  color: var(--text-color);
+}
+
+.section2{
+    height: 50vh;
+    background-color: var(--bg-color);
+}
+/*footer*/
+footer{
+    height: 30vh;
+    background-color: var(--bg-secondary);
+    overflow: auto;
+}
+footer .footer-content{
+  width: 60%;
+  margin:50px auto;
+}
+.subscription-container {
+  display: flex;
+  align-items: center;
+  background-color: #2b2b3b;
+  border-radius: 25px;
+  padding: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.email-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: none;
+  color: #d3d3d3;
+  font-size: 16px;
+  padding: 10px 15px;
+  border-radius: 25px 0 0 25px;
+}
+
+.email-input::placeholder {
+  color: #888;
+}
+
+.subscribe-button {
+  border: none;
+  outline: none;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius:  25px ;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #2b2b3b;
+  border-radius: 50%;
+  color: #3a97ff;
+  font-size: 24px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.icon:hover {
+  background-color: #3a97ff;
+  color: #fff;
+}
